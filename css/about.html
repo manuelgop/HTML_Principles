@@ -43,6 +43,40 @@
             <p>We are a fictional website and service that list top web developers around the world. Search and browse fictional web developers on our website absolutley FREE!</p>
             <h3>What Skills Do Our Developers Have?</h3>
             <p>Our listed fictional web developers skill ranges from Graphic design with Photoshop, Illustrator and Fireworks to markup languages like HTML5, XHTML and XML to programming languages such as Javascript, PHP, Python and ASP</p>
+
+            <video id="ad" width="500" height="350" controls>
+                <source src="video/ad.mp4" type="video/mp4">
+                Please update your Browser
+            </video>
+            <div style="width: 400px;">
+                <button onclick="playPause()">Play/Pause</button>
+                <button onclick="makeBig()">FullScreen</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                
+            </div>
+            <script type="text/javascript">
+                var myvideo=document.getElementById('ad');
+                function playPause(){
+                    if (myvideo.paused) {
+                           myvideo.play(); 
+                    }else{
+                            myvideo.pause();
+                    }
+                }
+
+                function makeBig(){
+                    myvideo.width=760;
+                }
+
+                function makeSmall(){
+                    myvideo.width=500;
+                }
+
+                function makeNormal(){
+                    myvideo.width=420;
+                }
+            </script>
     </div><!--content end-->
 	
 </div><!--container end-->
